@@ -3,7 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import { useHotkeys } from '@mantine/hooks';
 import useThemeStore from './store/useThemeStore';
 import { AppWrapper, AppGlobalStyles } from './App.style';
-import Sidebar from './layout/Sidebar/Sidebar';
+import Home from './pages/Home/Home';
+import Documentation from './pages/Documentation/Documentation';
 
 const App = () => {
   const { theme, toggleTheme } = useThemeStore();
@@ -22,7 +23,7 @@ const App = () => {
         />
         <Route
           path="/documentation"
-          element={<p>Documentation</p>}
+          element={<Documentation />}
         />
       </Routes>
     </AppWrapper>
