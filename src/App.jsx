@@ -7,7 +7,9 @@ import { AppWrapper, AppGlobalStyles } from './App.style';
 const App = () => {
   const { theme, toggleTheme } = useThemeStore();
 
-  useHotkeys([['mod+J', () => toggleTheme()]]);
+  useHotkeys([
+    ['mod+J', () => toggleTheme()],
+  ]);
 
   return (
     <AppWrapper className={theme}>
