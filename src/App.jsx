@@ -5,6 +5,7 @@ import useThemeStore from './store/useThemeStore';
 import { AppWrapper, AppGlobalStyles } from './App.style';
 import Home from './pages/Home/Home';
 import Documentation from './pages/Documentation/Documentation';
+import Navbar from './layout/Navbar/Navbar';
 
 const App = () => {
   const { theme, toggleTheme } = useThemeStore();
@@ -16,6 +17,7 @@ const App = () => {
   return (
     <AppWrapper className={theme}>
       <AppGlobalStyles theme={theme} />
+      <Navbar />
       <Routes>
         <Route
           path="/"
