@@ -10,7 +10,7 @@ export const NavbarWrapper = styled(Wrapper)`
 `;
 
 export const Brand = styled.div`
-  ${tw`
+  ${tw` 
     dark:text-accent
     text-2xl 
     font-extrabold 

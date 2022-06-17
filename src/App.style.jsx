@@ -9,6 +9,10 @@ export const AppWrapper = styled.div`
 
 export const AppGlobalStyles = createGlobalStyle`
 body{
+  ${tw`
+    text-primary
+  `}
+
   ${({ theme }) => theme === 'dark' && tw`
     bg-primary
     text-white
