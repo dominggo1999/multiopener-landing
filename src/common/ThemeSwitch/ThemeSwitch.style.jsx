@@ -9,14 +9,9 @@ export const Switch = styled(SwitchPrimitive.Root)`
     relative 
     rounded-full 
     flex 
-    items-center
+    items-center 
+    dark:bg-accent
   `}
-
-  &[data-state="checked"]{
-    ${tw`
-      bg-accent
-    `}
-  }
 `;
 
 export const SwitchThumb = styled(SwitchPrimitive.SwitchThumb)`
