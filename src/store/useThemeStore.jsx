@@ -4,7 +4,7 @@ import produce from 'immer';
 const DEFAULT_THEME = 'dark';
 
 let savedTheme = localStorage.getItem('theme');
-if (savedTheme !== 'dark' || savedTheme !== 'light') {
+if (savedTheme !== 'dark' && savedTheme !== 'light') {
   localStorage.setItem('theme', DEFAULT_THEME);
   savedTheme = DEFAULT_THEME;
 }
