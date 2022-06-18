@@ -9,6 +9,7 @@ import {
   Buttons,
 } from './Hero.style';
 import DemoVideo from '~/common/DemoVideo/DemoVideo';
+import DownloadDialog from '../DownloadDialog/DownloadDialog';
 
 const Hero = () => {
   return (
@@ -22,9 +23,7 @@ const Hero = () => {
           Higher quality, lower latency, creator focused video calls. Ping is the best way to bring your guests into OBS.
         </Description>
         <Buttons>
-          <Btn.Primary>
-            Download
-          </Btn.Primary>
+          <DownloadDialog />
           <Link to="/documentation">
             <Btn.Secondary>
               Documentation
