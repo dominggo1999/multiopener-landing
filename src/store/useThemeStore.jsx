@@ -9,8 +9,6 @@ if (savedTheme !== 'dark' && savedTheme !== 'light') {
   savedTheme = DEFAULT_THEME;
 }
 
-export const initialTheme = savedTheme;
-
 const toggleTheme = (set) => {
   return set(produce((draft) => {
     const newTheme = draft.theme === 'dark' ? 'light' : 'dark';
@@ -21,7 +19,7 @@ const toggleTheme = (set) => {
 
 const useThemeStore = create((set, get) => {
   return {
-    theme: initialTheme,
+    theme: savedTheme,
     toggleTheme: () => toggleTheme(set),
   };
 });
