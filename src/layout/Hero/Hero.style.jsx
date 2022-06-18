@@ -50,9 +50,11 @@ export const Description = styled.p`
 export const Buttons = styled.div`
   ${tw`
     flex 
-    gap-x-5 
+    flex-wrap
+    gap-x-5
+    gap-y-3 
     md:mt-5
-    mt-3
+    mt-3 
   `}
 `;
 
