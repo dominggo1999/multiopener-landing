@@ -37,7 +37,12 @@ const DownloadDialog = () => {
             <p>Vestibulum ullamcorper mattis dolor ac mattis. Ut ut lacus risus. Donec aliquam placerat porttitor. Aenean sagittis finibus massa.</p>
             <p>Vestibulum ullamcorper mattis dolor ac mattis. Ut ut lacus risus. Donec aliquam placerat porttitor. Aenean sagittis finibus massa. <Link to="/documentation">Check how to install here</Link></p>
             <Buttons>
-              <Btn.Primary>
+              <Btn.Primary
+                download="multi-search.ico"
+                href="/favicons/favicon.ico"
+                as="a"
+                className="download-button"
+              >
                 Download
               </Btn.Primary>
               <DialogClose asChild>

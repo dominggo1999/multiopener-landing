@@ -47,7 +47,7 @@ export const Message = styled.div`
       `}
     }
 
-    a{
+    a:not(.download-button){
       ${tw`
         text-accent
       `}
@@ -66,7 +66,7 @@ export const Message = styled.div`
     `}
   }
 
-  a{
+  a:not(.download-button){
     ${tw`
       underline 
       font-bold
