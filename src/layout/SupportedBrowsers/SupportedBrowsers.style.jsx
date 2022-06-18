@@ -3,8 +3,9 @@ import { Wrapper } from '~/common/Wrapper';
 
 export const FullWidth = styled.div`
   ${tw`
-    w-full
-    py-6 
+    w-full 
+    mb-10 
+    py-10
     md:py-16
   `}
 `;
@@ -22,8 +23,7 @@ export const SupportedBrowserWrapper = styled(Wrapper)`
 export const SupportedBrowserHeader = styled.h2`
   ${tw`
     text-center
-    text-2xl 
-    sm:text-3xl 
+    text-3xl 
     font-bold 
     capitalize
     max-w-[32rem]

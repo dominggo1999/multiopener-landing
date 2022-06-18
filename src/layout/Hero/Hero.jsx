@@ -1,16 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Player } from 'video-react';
 import Btn from '~/common/Button';
 import {
   HeroWrapper,
   HeroText,
-  HeroVideo,
   Title,
   Description,
   Buttons,
 } from './Hero.style';
-import 'video-react/dist/video-react.css';
+import DemoVideo from '~/common/DemoVideo/DemoVideo';
 
 const Hero = () => {
   return (
@@ -34,11 +32,7 @@ const Hero = () => {
           </Link>
         </Buttons>
       </HeroText>
-      <HeroVideo>
-        <Player>
-          <source src="test.mp4" />
-        </Player>
-      </HeroVideo>
+      <DemoVideo />
     </HeroWrapper>
   );
 };
