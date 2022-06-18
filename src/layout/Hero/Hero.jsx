@@ -12,7 +12,7 @@ import DemoVideo from '~/common/DemoVideo/DemoVideo';
 
 const Hero = () => {
   return (
-    <HeroWrapper>
+    <HeroWrapper as="main">
       <HeroText>
         <Title>
           <span>A better way to</span>

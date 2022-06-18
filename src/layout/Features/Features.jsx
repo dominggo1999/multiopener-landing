@@ -10,7 +10,7 @@ import DemoVideo from '~/common/DemoVideo/DemoVideo';
 
 const Features = () => {
   return (
-    <FeaturesWrapper>
+    <FeaturesWrapper as="section">
       <FeatureItem>
         <FeatureTextContent>
           <FeatureTitle>Search multiple websites with the same search term.</FeatureTitle>

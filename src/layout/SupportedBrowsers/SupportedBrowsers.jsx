@@ -13,7 +13,7 @@ const browserLogos = mapGlobFiles(images).map((i) => i.replace('/public', ''));
 
 const SupportedBrowsers = () => {
   return (
-    <FullWidth>
+    <FullWidth as="section">
       <SupportedBrowserWrapper>
         <SupportedBrowserHeader>
           Supported top chromium based web browsers
