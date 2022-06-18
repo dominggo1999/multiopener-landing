@@ -50,7 +50,6 @@ export const Description = styled.p`
 export const Buttons = styled.div`
   ${tw`
     flex 
-    flex-wrap
     gap-x-5
     gap-y-3 
     md:mt-5
@@ -65,6 +64,14 @@ export const HeroVideo = styled.div`
     sm:w-[90%]
     lg:w-full 
   `}
+
+  /* Background */
+  & > .video-react {
+    ${tw`
+      bg-white
+      dark:bg-primary
+    `}
+  }
 
   /* Play button */
   .video-react-button.video-react-big-play-button{
