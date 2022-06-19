@@ -8,7 +8,9 @@ export const AppWrapper = styled.div`
     transition-bg
     ease-out-sine
     duration-200 
-    min-h-screen
+    min-h-screen 
+    flex 
+    flex-col
   `}
 
   &.dark{

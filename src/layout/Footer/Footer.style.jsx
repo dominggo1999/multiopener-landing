@@ -6,7 +6,8 @@ export const FooterWrapper = styled(Wrapper)`
     grid
     grid-cols-1
     lg:grid-cols-2
-    gap-y-8
+    gap-y-8 
+    mt-auto
   `}
 `;
 export const Copyright = styled.div`
