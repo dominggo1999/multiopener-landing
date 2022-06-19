@@ -25,6 +25,7 @@ export const ContentWrapper = styled.div`
 
   a{
     ${tw`
+      underline
       font-semibold
       dark:(text-accent font-normal)
     `}
@@ -97,18 +98,20 @@ export const Link = ({ href, children }) => {
 
 const ImageStyles = styled.figure`
   ${tw`
-    mb-5
+    mb-8
   `}
 
   p{
     ${tw`
       text-center
-    `}
+      text-sm
+    `} 
   }
 
   a{
     ${tw`
-      text-accent
+      underline
+      dark:text-accent
     `}
   }
 `;
