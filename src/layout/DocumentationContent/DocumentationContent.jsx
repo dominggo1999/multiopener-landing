@@ -6,6 +6,7 @@ import {
   Heading3,
   Link,
   ContentWrapper,
+  Image,
 } from '~/common/MarkdownMapping';
 import DemoVideo from '~/common/DemoVideo/DemoVideo';
 
@@ -27,6 +28,7 @@ const DocumentationContent = ({ docs }) => {
           h2: Heading2,
           h3: Heading3,
           a: Link,
+          Image,
           DemoVideo,
         }}
       />

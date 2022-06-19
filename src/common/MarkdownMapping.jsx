@@ -94,3 +94,36 @@ export const Link = ({ href, children }) => {
     </RouterLink>
   );
 };
+
+const ImageStyles = styled.figure`
+  ${tw`
+    mb-5
+  `}
+
+  p{
+    ${tw`
+      text-center
+    `}
+  }
+
+  a{
+    ${tw`
+      text-accent
+    `}
+  }
+`;
+
+export const Image = ({ src, alt, children }) => {
+  return (
+    <ImageStyles>
+      <img
+        alt={alt}
+        src={src}
+        tw="w-full mb-2"
+      />
+      {
+        children && children
+      }
+    </ImageStyles>
+  );
+};
