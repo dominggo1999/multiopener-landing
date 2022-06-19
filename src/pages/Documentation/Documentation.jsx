@@ -1,13 +1,18 @@
 import React from 'react';
-import HowToInstall from '~/docs/HowToInstall.mdx';
-import Sidebar from '~/layout/Sidebar/Sidebar';
 import { DocumentationWrapper } from './Documentation.style';
+import DocumentationSidebar from '~/layout/DocumentationSidebar/DocumentationSidebar';
+import DocumentationContent from '~/layout/DocumentationContent/DocumentationContent';
+import { mapMdxMeta } from '~/util/mapGlobFiles';
+
+const mdxFiles = import.meta.globEager('../../docs/*.mdx');
+
+const docs = mapMdxMeta(mdxFiles);
 
 const Documentation = () => {
   return (
     <DocumentationWrapper>
-      <Sidebar />
-      <HowToInstall />
+      <DocumentationSidebar docs={docs} />
+      <DocumentationContent docs={docs} />
     </DocumentationWrapper>
   );
 };

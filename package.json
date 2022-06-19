@@ -18,6 +18,7 @@
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.0.2",
     "short-uuid": "^4.2.0",
+    "slugify": "^1.6.5",
     "styled-components": "^5.3.5",
     "video-react": "^0.15.0",
     "zustand": "^4.0.0-rc.0"
