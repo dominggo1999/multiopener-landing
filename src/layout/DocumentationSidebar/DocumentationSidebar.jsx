@@ -14,7 +14,7 @@ import {
 import useDocsNav from '~/hooks/useDocsNav';
 
 const DocumentationSidebar = ({ docs }) => {
-  const [open, setOpen] = useDocsNav();
+  const [open, setOpen, close] = useDocsNav();
   const { slug } = useParams();
 
   return (
@@ -41,7 +41,10 @@ const DocumentationSidebar = ({ docs }) => {
                       className={i.slug === slug && 'active'}
                       key={i.slug}
                     >
-                      <Link to={`/documentation/${i.slug}`}>
+                      <Link
+                        onClick={close}
+                        to={`/documentation/${i.slug}`}
+                      >
                         {i.title}
                       </Link>
                     </NavItem>

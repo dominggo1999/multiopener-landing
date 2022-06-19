@@ -15,7 +15,11 @@ const useDocsNav = () => {
     isBigScreen ? setOpen(true) : setOpen(false);
   }, [isBigScreen]);
 
-  return [open, setOpen];
+  const close = () => {
+    !isBigScreen && setOpen(false);
+  };
+
+  return [open, setOpen, close];
 };
 
 export default useDocsNav;
