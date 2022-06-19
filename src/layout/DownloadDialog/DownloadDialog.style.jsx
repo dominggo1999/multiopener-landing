@@ -34,6 +34,10 @@ export const Message = styled.div`
     rounded 
     p-6 
     z-[9999]
+    transition 
+    transition-bg
+    ease-out-sine
+    duration-200 
   `}
 
   &.dark{

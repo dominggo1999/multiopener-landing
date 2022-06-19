@@ -1,19 +1,17 @@
 import tw, { styled } from 'twin.macro';
-import { createGlobalStyle } from 'styled-components';
 
 export const AppWrapper = styled.div`
   ${tw`
-    
+    text-primary
+    bg-white
+    transition 
+    transition-bg
+    ease-out-sine
+    duration-200 
   `}
-`;
 
-export const AppGlobalStyles = createGlobalStyle`
-  body{
+  &.dark{
     ${tw`
-      text-primary
-    `}
-
-    ${({ theme }) => theme === 'dark' && tw`
       bg-primary
       text-white
     `}
