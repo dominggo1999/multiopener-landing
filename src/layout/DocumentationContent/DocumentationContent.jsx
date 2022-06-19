@@ -7,6 +7,7 @@ import {
   Link,
   ContentWrapper,
 } from '~/common/MarkdownMapping';
+import DemoVideo from '~/common/DemoVideo/DemoVideo';
 
 const DocumentationContent = ({ docs }) => {
   const { slug } = useParams();
@@ -26,6 +27,7 @@ const DocumentationContent = ({ docs }) => {
           h2: Heading2,
           h3: Heading3,
           a: Link,
+          DemoVideo,
         }}
       />
     </ContentWrapper>

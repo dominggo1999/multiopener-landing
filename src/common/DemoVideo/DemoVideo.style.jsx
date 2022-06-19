@@ -8,6 +8,11 @@ export const VideoWrapper = styled.div`
     lg:w-full 
   `}
 
+  aspect-ratio: 1366/738;
+
+  ${({ slug }) => slug && tw`
+  mb-6`}
+
   /* Background */
   & > .video-react {
     ${tw`

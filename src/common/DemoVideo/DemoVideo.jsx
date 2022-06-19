@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import { Player } from 'video-react';
 import { VideoWrapper } from './DemoVideo.style';
 import 'video-react/dist/video-react.css';
@@ -9,6 +10,7 @@ const DemoVideo = ({ src = 'test.mp4' }) => {
   const stopOtherPlayers = useVideoStore((state) => state.stopOtherPlayers);
   const removeVideo = useVideoStore((state) => state.removeVideo);
   const playerRef = useRef();
+  const { slug } = useParams();
 
   useEffect(() => {
     collectVideo(playerRef.current);
@@ -19,7 +21,7 @@ const DemoVideo = ({ src = 'test.mp4' }) => {
   }, []);
 
   return (
-    <VideoWrapper>
+    <VideoWrapper slug={slug}>
       <Player
         onPlay={() => stopOtherPlayers(playerRef.current)}
         ref={playerRef}
