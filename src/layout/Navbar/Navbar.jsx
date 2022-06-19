@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { NavbarWrapper, Brand } from './Navbar.style';
+import { NavbarWrapper } from './Navbar.style';
 import ThemeSwitch from '~/common/ThemeSwitch/ThemeSwitch';
+import { Brand } from '~/common/Brand';
 
 const Navbar = () => {
   return (

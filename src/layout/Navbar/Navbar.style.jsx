@@ -8,11 +8,3 @@ export const NavbarWrapper = styled(Wrapper)`
     py-7
   `}
 `;
-
-export const Brand = styled.div`
-  ${tw` 
-    dark:text-accent
-    text-2xl 
-    font-extrabold 
-  `}
-`;

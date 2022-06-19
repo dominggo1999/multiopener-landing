@@ -6,6 +6,6 @@ export const DocumentationWrapper = styled(Wrapper)`
     flex 
     flex-col
     lg:flex-row
-    gap-x-10
+    gap-x-10 
   `}
 `;
