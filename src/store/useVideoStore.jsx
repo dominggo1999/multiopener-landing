@@ -16,6 +16,12 @@ const useVideoStore = create((set, get) => {
         current !== i && i.pause();
       });
     },
+    removeVideo: (video) => {
+      return set(produce((draft) => {
+        const targetId = get().videos.indexOf(video);
+        draft.videos.splice(targetId, 1);
+      }));
+    },
   };
 });
 

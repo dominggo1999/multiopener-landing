@@ -7,10 +7,15 @@ import useVideoStore from '~/store/useVideoStore';
 const DemoVideo = ({ src = 'test.mp4' }) => {
   const collectVideo = useVideoStore((state) => state.collectVideo);
   const stopOtherPlayers = useVideoStore((state) => state.stopOtherPlayers);
+  const removeVideo = useVideoStore((state) => state.removeVideo);
   const playerRef = useRef();
 
   useEffect(() => {
     collectVideo(playerRef.current);
+
+    return () => {
+      removeVideo(playerRef.current);
+    };
   }, []);
 
   return (
