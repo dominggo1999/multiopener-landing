@@ -1,5 +1,7 @@
 import React from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import {
+  Routes, Route, Navigate, Link,
+} from 'react-router-dom';
 import { useHotkeys } from '@mantine/hooks';
 import useThemeStore from './store/useThemeStore';
 import { AppWrapper, AppGlobalStyles } from './App.style';

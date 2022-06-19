@@ -1,6 +1,12 @@
 import React from 'react';
 import { useParams, Navigate } from 'react-router-dom';
-import { ContentWrapper } from './DocumentationContent.style';
+import {
+  Heading1,
+  Heading2,
+  Heading3,
+  Link,
+  ContentWrapper,
+} from '~/common/MarkdownMapping';
 
 const DocumentationContent = ({ docs }) => {
   const { slug } = useParams();
@@ -14,7 +20,14 @@ const DocumentationContent = ({ docs }) => {
 
   return (
     <ContentWrapper>
-      <DocumentationItem />
+      <DocumentationItem
+        components={{
+          h1: Heading1,
+          h2: Heading2,
+          h3: Heading3,
+          a: Link,
+        }}
+      />
     </ContentWrapper>
   );
 };
