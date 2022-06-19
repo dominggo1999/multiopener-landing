@@ -26,7 +26,7 @@ const App = () => {
         <Route
           path="/documentation"
           element={
-            <Navigate to="/documentation/get-started" />
+            <Navigate to="/documentation/use-cases" />
           }
         />
 
