@@ -24,7 +24,7 @@ const Hero = () => {
         </Description>
         <Buttons>
           <DownloadDialog />
-          <Link to="/documentation">
+          <Link to="/documentation/use-cases">
             <Btn.Secondary>
               Documentation
             </Btn.Secondary>
