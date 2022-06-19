@@ -10,13 +10,17 @@ export const VideoWrapper = styled.div`
 
   ${({ slug }) => slug && tw`
   mb-6`}
+  aspect-ratio: 1366/738;
 
   /* Background */
   & > .video-react {
     ${tw`
       bg-white
       dark:bg-primary
+      h-full
     `}
+
+    padding-top : 0!important;
   }
 
   /* Play button */
