@@ -49,6 +49,8 @@ export const TriggerButton = styled(CollapsiblePrimitive.Trigger)`
     mb-3
   `}
 
+  ${({ open }) => !open && tw`mb-6`}
+
   span{
     ${tw`
       ml-2

@@ -24,7 +24,7 @@ const DocumentationSidebar = ({ docs }) => {
       onOpenChange={setOpen}
     >
       <>
-        <CollapsibleTrigger>
+        <CollapsibleTrigger open={open}>
           Documentation
           <span>
             {open ? <ArrowUp /> : <ArrowDown />}
