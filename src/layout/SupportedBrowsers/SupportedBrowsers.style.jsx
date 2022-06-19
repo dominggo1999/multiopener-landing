@@ -4,9 +4,9 @@ import { Wrapper } from '~/common/Wrapper';
 export const FullWidth = styled.div`
   ${tw`
     w-full 
-    mb-10 
     py-10
-    md:py-16
+    mb-10
+    md:(py-16 mb-20 )
   `}
 `;
 
