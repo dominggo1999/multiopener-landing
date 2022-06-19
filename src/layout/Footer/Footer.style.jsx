@@ -31,7 +31,7 @@ export const CopyrightText = styled.p`
     
   a{
     ${tw`
-      text-accent 
+      dark:text-accent 
       font-semibold 
       underline 
     `}
