@@ -55,7 +55,13 @@ export const ContentWrapper = styled.div`
       `}
     }
   }
- 
+  
+  strong{
+    ${tw`
+      text-black
+      dark:text-white 
+    `}
+  }
 `;
 
 export const Heading1 = styled.h1`
