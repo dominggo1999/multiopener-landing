@@ -1,17 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { NavbarWrapper } from './Navbar.style';
+import { NavbarWrapper, Fixed } from './Navbar.style';
 import ThemeSwitch from '~/common/ThemeSwitch/ThemeSwitch';
 import { Brand } from '~/common/Brand';
 
 const Navbar = () => {
   return (
-    <NavbarWrapper as="nav">
-      <Link to="/">
-        <Brand>Multi Search</Brand>
-      </Link>
-      <ThemeSwitch />
-    </NavbarWrapper>
+    <Fixed>
+      <NavbarWrapper>
+        <Link to="/">
+          <Brand>Multi Search</Brand>
+        </Link>
+        <ThemeSwitch />
+      </NavbarWrapper>
+    </Fixed>
   );
 };
 

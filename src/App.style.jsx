@@ -11,6 +11,7 @@ export const AppWrapper = styled.div`
     min-h-screen 
     flex 
     flex-col
+    pt-20
   `}
 
   &.dark{

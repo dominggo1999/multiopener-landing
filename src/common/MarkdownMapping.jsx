@@ -5,7 +5,8 @@ import { isValidUrl } from '~/util/isValidUrl';
 export const ContentWrapper = styled.div`
   ${tw`
     w-full
-    lg:max-w-[46rem]
+    lg:max-w-[62rem]
+    lg:pl-[16rem]
   `}
 
   h1,h2,h3,h4,h5,h6{

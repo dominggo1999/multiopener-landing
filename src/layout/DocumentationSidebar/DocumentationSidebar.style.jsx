@@ -7,7 +7,8 @@ const SidebarWrapper = styled.ul`
     flex-col
     min-w-[16rem] 
     mb-6
-    lg:mb-0
+    lg:mb-0 
+    lg:fixed
   `}
 `;
 
