@@ -27,9 +27,12 @@ const App = () => {
         />
         <Route
           path="/documentation"
-          element={
-            <Navigate to="/documentation/use-cases" />
-          }
+          element={(
+            <Navigate
+              replace
+              to="/documentation/use-cases"
+            />
+          )}
         />
 
         <Route
