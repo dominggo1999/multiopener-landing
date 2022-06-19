@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams, Navigate } from 'react-router-dom';
+import { ContentWrapper } from './DocumentationContent.style';
 
 const DocumentationContent = ({ docs }) => {
   const { slug } = useParams();
@@ -12,9 +13,9 @@ const DocumentationContent = ({ docs }) => {
   const DocumentationItem = activeContent.component;
 
   return (
-    <div>
+    <ContentWrapper>
       <DocumentationItem />
-    </div>
+    </ContentWrapper>
   );
 };
 
