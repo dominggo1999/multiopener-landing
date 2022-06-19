@@ -1,7 +1,7 @@
 import tw, { styled } from 'twin.macro';
 import * as CollapsiblePrimitive from '@radix-ui/react-collapsible';
 
-export const SidebarWrapper = styled.ul`
+const SidebarWrapper = styled.ul`
   ${tw`
     flex 
     flex-col

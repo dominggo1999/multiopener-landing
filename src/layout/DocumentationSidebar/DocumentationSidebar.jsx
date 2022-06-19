@@ -5,7 +5,6 @@ import {
   AiOutlineArrowUp as ArrowUp,
 } from 'react-icons/ai';
 import {
-  SidebarWrapper,
   NavItem,
   Collapsible,
   CollapsibleTrigger,
