@@ -13,6 +13,7 @@
     "@radix-ui/react-switch": "^0.1.5",
     "@radix-ui/react-visually-hidden": "^0.1.4",
     "immer": "^9.0.12",
+    "plyr-react": "^5.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-hook-form": "^7.30.0",
@@ -22,7 +23,6 @@
     "short-uuid": "^4.2.0",
     "slugify": "^1.6.5",
     "styled-components": "^5.3.5",
-    "video-react": "^0.15.0",
     "zustand": "^4.0.0-rc.0"
   },
   "devDependencies": {
